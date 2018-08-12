@@ -20,9 +20,9 @@ The WIAM chatbot allows a user to :
 
 :white_check_mark: provide feedback on WIAM
 
-The chatbot makes the entire process very __interactive__ and __intutive__. The feedback is not just collected but also analyzed in real-time using IBM Watson __Tone Analyzer__ API to understand the __emotion__ (happy,sad,frustrated,angry etc) behind. The feedback consolidated from all the users, can then be made available as a Dashboard to the management, to enable decisions.
+The chatbot makes most process very __interactive__ and __intutive__. The feedback is not just collected but also analyzed in real-time using IBM Watson __Tone Analyzer__ API to understand the __emotion__ (happy,sad,frustrated,angry etc) behind. The feedback consolidated from all the users, can then be made available as a Dashboard to the management, to enable decisions.
 
-The solution is designed to scale and is deployed on the IBM's bluemix cloud platform. Below is a high-level overview of the solution design :
+The solution is designed to scale and is deployed on the IBM's bluemix cloud platform. Below is a bird's eye-view of the solution design :
 
 ![Screenshot](screenshot.png)
 
