@@ -1,0 +1,25 @@
+{
+  "context": {
+    "feedback": "<? input.text ?>",
+    "skip_user_input": true,
+    "toneFound": ""
+  },
+  "output": {
+    "text": {
+      "values": [
+        "I sense $toneFound"
+      ]
+    }
+  },
+  "actions": [
+    {
+      "name": "https://spashta.eu-gb.mybluemix.net/analyze?feedback=$feedback",
+      "type": "client",
+      "parameters": {
+        "userInput": "context.feedback"
+      },
+      "credentials": "null",
+      "result_variable": "toneFound"
+    }
+  ]
+}
