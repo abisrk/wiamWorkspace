@@ -1,0 +1,30 @@
+
+#
+import sys, requests, json
+
+def main(dict):
+    print(dict)
+    print('**********************************')
+    print(dict['userInput'])
+
+
+    userId = 'd8bda777-003f-4d8e-9fdf-0919d8be3cf6'
+    password = 'oOuR25RAK5G5'
+    userInput = dict['userInput']
+    url = 'https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21&text=' + userInput
+
+    resp = requests.get(url,auth=(userId,password))
+
+    if resp.status_code != 200:
+        # This means something went wrong.
+        print(resp)
+    else:
+        responseGot = resp.json()
+        firstRec = responseGot['document_tone']['tones'][0]
+        print(firstRec['tone_name'])
+        print(resp.status_code)
+
+    responseToUser = {
+        'toneFound': firstRec['tone_name']
+    }
+    return responseToUser
