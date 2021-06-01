@@ -1,4 +1,4 @@
 Flask==0.12.2
 flask-restful==0.3.6
 cloudant==2.4.0
-urllib3==1.22
+urllib3==1.26.5
